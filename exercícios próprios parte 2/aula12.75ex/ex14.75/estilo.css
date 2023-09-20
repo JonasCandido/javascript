@@ -1,0 +1,31 @@
+body {
+    background: rgb(102, 102, 237);
+    text-align: center;
+}
+
+header {
+    color: white;
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.299);
+}
+
+div {
+    padding: 8px;
+}
+
+footer {
+    color: white;
+    font-style: italic;
+}
+
+img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}

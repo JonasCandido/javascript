@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 10</title>
+</head>
+<body>
+    <h2>Concatenando textos</h2>
+    <p>Texto 1</p>
+    <input type="text" name="texto1" id="texto1">
+    <p>Texto 2</p>
+    <input type="text" name="texto2" id="texto2">
+    <input type="button" value="Concatenar" onclick="concatenar()">
+    <div id="res">Resultado aqui</div>
+    <script>
+        var res = window.document.getElementById('res')
+        function concatenar(){
+            var text_1 = window.document.getElementById('texto1').value
+            var text_2 = window.document.getElementById('texto2').value
+            var junto = text_1+' '+ text_2
+            res.innerHTML = junto
+        }
+    </script>
+</body>
+</html>

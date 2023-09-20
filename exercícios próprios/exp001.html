@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Próprio 1</title>
+</head>
+<body>
+    <h2>Exercício 01</h2>
+    <button onclick="media()">Calcular média</button>
+    <script>
+
+    //Calculo da média de três notas
+      
+        function media(){
+         confirmação = window.confirm("Deseja calcular a média?")
+         if (confirmação == true){
+          nota1 = parseFloat(window.prompt("Informe a primeira nota do aluno"))
+          nota2 = parseFloat(window.prompt("Informe a segunda nota do aluno:"))
+          nota3 = parseFloat(window.prompt("Informe a terceira nota do aluno"))
+          media_calc = (nota1+nota2+nota3)/3
+          window.alert("A média desse aluno é: " + media_calc)
+         }
+        }
+    </script>
+</body>
+</html>

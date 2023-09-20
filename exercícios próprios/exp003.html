@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Próprio 3</title>
+</head>
+<body>
+    <h2>Exercício 03</h2>
+    <button onclick="dias_vidas()">Começar</button>
+    <script>
+
+    //Calculo da idade em dias
+
+    function dias_vidas(){
+      confirmation = window.confirm("Deseja calcular sua idade em dias?")
+      if (confirmation == true){
+        idades_anos = parseInt(window.prompt("Informe sua idade em anos: "))
+        idades_meses = parseInt(window.prompt("Informe sua idade em meses"))
+        idades_dias = idades_anos * 365 + idades_meses * 30
+        window.alert("Sua idade em dias é: " + idades_dias)
+      }
+    }
+    </script>
+</body>
+</html>

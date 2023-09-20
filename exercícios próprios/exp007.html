@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 7</title>
+</head>
+<body>
+
+    <h2>Ternário</h2>
+    <p>Informe um valor</p>
+    <input type="number" id="n1">
+    <p>Informe outro valor</p>
+    <input type="number" id="n2">
+    <button onclick="ternario()">Clique aqui!</button>
+    <div id="area">
+
+    </div>
+</body>
+    <script>
+        a = window.document.getElementById('area')
+        function ternario(){
+           n1 = parseInt(window.document.getElementById('n1').value)
+           n2 = parseInt(window.document.getElementById('n2').value)
+           terno = n1 == n2?'IGUAIS':'DIFERENTES'
+           a.innerHTML = terno
+        }
+    </script>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inner text e Inner HTML</title>
+</head>
+<body>
+    <p id="p0">Qualquer coisa</p>
+    <p id="p1">Qualquer coisa</p>
+    <script>
+        var p0 = window.document.getElementById('p0')
+        var p1 = window.document.getElementById('p1')
+        p1.innerHTML = "<strong>Qualquer coisa dois</strong>"
+        document.write(p0.innerText)
+    </script>
+</body>
+</html>

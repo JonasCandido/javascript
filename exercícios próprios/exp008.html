@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 8</title>
+</head>
+<body>
+    <div class = "area_de_testes">
+    <h2><strong>Título 1</strong></h2>
+    <h2>Título 2</h2>
+    </div>
+
+  
+     <h2>Testando query</h2>
+    <div class = "query_test">
+     <p>
+     modificação aqui
+     </p>
+    </div>
+
+    <div class = 'query_all_test'>
+     <p>Mudança 1 aqui</p>
+    </div>
+
+    <div class = 'query_all_test'>
+     <p>Mudança 2 aqui</p>
+    </div>
+
+</body>
+    <script>
+    var corpo = window.document.body
+    var teste_area = window.document.getElementsByClassName('area_de_testes')[0]
+    var query_test = window.document.querySelector('div.query_test')
+    var query_all_test = window.document.querySelectorAll('div.query_all_test')[0]
+    var query_all_test2 = window.document.querySelectorAll('div.query_all_test')[1]
+    var title1 = window.document.getElementsByTagName('h2')[0]
+    var title2 = window.document.getElementsByTagName('h2')[1]
+    window.document.write(title1.innerText)
+    window.document.write(title1.innerHTML)
+    title1.style.color = 'black'
+    corpo.style.background = 'blue'
+    teste_area.style.background = 'green' 
+    query_test.style.background = 'red'
+    query_all_test.style.background = 'red'
+    query_all_test2.style.background = 'purple'
+
+    /*var query_test = window.document.querySelector('div.query_test')
+    query_test.style.background = 'blue'*/
+    </script>
+</html>

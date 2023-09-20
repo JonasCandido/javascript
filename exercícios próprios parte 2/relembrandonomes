@@ -1,0 +1,7 @@
+indentificadores nomes regras
+1-Podem começar com letra, $ ou _
+2-É possível usar letras ou números
+3-Não podem começar com números
+4-É possível acentos e símbolos
+5-Não podem conter espaços(substituir por sublinhado)
+6-Não podem ser palavras reservadas

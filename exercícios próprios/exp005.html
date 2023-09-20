@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 05</title>
+</head>
+<body>
+     <h2>Quantidade de casas decimais teste:</h2>
+     <button onclick="mostrarResultado()">4 casa decimais</button>
+     
+     <h2>Invertendo ponto e vírgula</h2>
+     <button onclick="trocarPonto()">Troca-troca</button>
+
+     <h2>Localizando dinheiro</h2>
+     <button onclick="localizarDinheiro()">Localizar</button>
+     <script>
+     //testando n.to Fixed
+     function mostrarResultado(){
+        var n1 = parseFloat(window.prompt('Informe um valor'))
+        window.alert(`Duas casas decimais ${n1.toFixed(4)}`)
+     }
+     //testando .replace
+     function trocarPonto(){
+        var n1 = Number(window.prompt('Digite um número'))
+        window.alert(`Números com ponto: ${n1}.Sem ponto: ${n1.toFixed(2).replace('.', ',')}`)
+     }
+     //formatação de dinheiro
+     function localizarDinheiro(){
+        var dinheiro = parseFloat(window.prompt('Informe a quantia'))
+        window.alert(`Dinheiro em formmato BR: ${dinheiro.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`)
+     }
+     </script>
+</body>
+</html>
